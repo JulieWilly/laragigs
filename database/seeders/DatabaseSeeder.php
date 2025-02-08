@@ -21,16 +21,18 @@ class DatabaseSeeder extends Seeder
             'email' => 'test@example.com',
         ]);
 
+        Listings::factory(7)->create();
+`
 
-        Listings::create([
-            'title' => 'Angular, React native',
-            'tags' => 'Angular JS, React Native, Javasscript, Node JS, Express JS',
-            'company' => 'Technovations Corp',
-            'location' => 'Nairobi, KE',
-            'email' => 'email@gmail.com',
-            'website' => 'https://www.acme.com',
-            'description' => 'This is a story that I would want to be told generations and generation over time to be a teaching of the great love that the lord has for those who believes in HIM'
-        ]);
+        // Listings::create([
+        //     'title' => 'Angular, React native',
+        //     'tags' => 'Angular JS, React Native, Javasscript, Node JS, Express JS',
+        //     'company' => 'Technovations Corp',
+        //     'location' => 'Nairobi, KE',
+        //     'email' => 'email@gmail.com',
+        //     'website' => 'https://www.acme.com',
+        //     'description' => 'This is a story that I would want to be told generations and generation over time to be a teaching of the great love that the lord has for those who believes in HIM'
+        // ]);
 
 
 
