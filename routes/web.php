@@ -25,6 +25,8 @@ Route::get('/search', function(Request $request) {
 });
 
 
-// single listing 
+// creaate a bew job update.
+Route::get('/listings/create', [ListingsController::class, 'create']);
 
+// single listing 
 Route::get('/single-list/{listing}', [ListingsController::class, 'show']);
