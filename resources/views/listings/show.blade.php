@@ -1,14 +1,3 @@
-<!-- <x-layout>
-    @include('partials._search')
-    <h2>
-        {{$listing['id']}}
-    </h2>
-    <span>{{$listing['title'];}} </span>
-    <p> {{$listing['description'];}} </p>
-
-    @endsection
-
-</x-layout> -->
 
 <x-layout>
     <a href="/" class="inline-block text-black ml-4 mb-4"><i class="fa-solid fa-arrow-left"></i> Back

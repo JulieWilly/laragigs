@@ -11,7 +11,7 @@ class ListingsController extends Controller
 {
     public function index()
     {
-        return view('listing.index', [
+        return view('listings.index', [
             'listings' => Listings::latest()->filter(request((['tags', 'search'])))->paginate()
         ]);
     }
@@ -19,7 +19,7 @@ class ListingsController extends Controller
     // show single listings
     public function show(Listings $listing)
     {
-        return view('listing.show', [
+        return view('listings.show', [
             'listing' => $listing
         ]);
     }
