@@ -45,6 +45,6 @@ class ListingsController extends Controller
         // create in the database
         Listings::create($formFields);
 
-        return redirect('/'); 
+        return redirect('/')->with('message', 'Listing created successfully!');
     }
 }

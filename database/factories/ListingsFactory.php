@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Listings;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -27,5 +28,6 @@ class ListingsFactory extends Factory
             'description' => $this->faker->paragraph(3)
         ];
         
+
     }
 }
