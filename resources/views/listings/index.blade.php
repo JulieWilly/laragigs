@@ -5,27 +5,16 @@
 
         @unless(count($listings) == 0)
         @foreach($listings as $lst)
-        <!-- {{-- <h2>{{$lst['id'];}} </h2>
-    <span>{{$lst['title'];}} </span> --}}
-    <h2>
-        <a href="/single-list/{{$lst['id']}}"> {{$lst['title']}}</a>
-        {{-- {{$lst['id'];}}
-    </h2> --}}
-    <h4>{{$lst['company']}}</h4>
-    <span>{{$lst['tags']}}</span>
-
-    <p> {{$lst['description'];}} </p>
-    <span>{{$lst['email']}}</span> <span>{{$lst['website']}}</span> -->
 
         <x-listing-card :listing='$lst' />
         @endforeach
-
         @else
         <p>No listings found.</p>
         @endunless
 
     </div>
 
-    @endsection
-
+    <div class="mt-6 p-4">
+        {{$listings->links()}}
+    </div>
 </x-layout>
